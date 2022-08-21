@@ -1,0 +1,68 @@
+service: serverless-api
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  region: ca-central-1
+  runtime: nodejs16.x
+  environment:
+    POSTS_TABLE: Data
+  iam:
+    role: 
+      statements:
+        - Effect: "Allow"
+          Action:
+              - dynamodb:DescribeTable
+              - dynamodb:Scan
+              - dynamodb:GetItem
+              - dynamodb:PutItem
+              - dynamodb:UpdateItem
+              - dynamodb:DeleteItem
+          Resource:
+            - "arn:aws:dynamodb:${self:provider.region}:*:table/${self:provider.environment.POSTS_TABLE}"
+functions:
+  createData:
+    handler: src/handlers/create.createData
+    events:
+    - http:
+        path: /data
+        method: post
+  getAllData:
+    handler: src/handlers/getData.getAllData
+    events:
+    - http:
+        path: /data
+        method: get
+  getData:
+    handler: src/handlers/getData.getData
+    events:
+    - http:
+        path: /data/{id}
+        method: get
+  updatePost:
+    handler: src/handlers/update.updateData
+    events:
+    - http:
+        path: /data/{id}
+        method: put
+  deleteData:
+    handler: src/handlers/delete.deleteData
+    events:
+    - http:
+        path: /data/{id}
+        method: delete
+resources:
+  Resources:
+    PostsTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        AttributeDefinitions:
+        - AttributeName: "id"
+          AttributeType: "S"
+        KeySchema:
+        - AttributeName: "id"
+          KeyType: "HASH"
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+        TableName: ${self:provider.environment.POSTS_TABLE}
