@@ -1,6 +1,17 @@
 # Serverless CRUD REST API
 <br>
-
+<hr>
+<br>
+<ul>
+    <h3>Quick Links: </h3>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#deployment">Deployment</a></li>
+</ul>
+<br>
+<hr>
+<br>
+<div id="usage"></div>
+## Usage:
 <table>
     <tr>
         <th>No</th>
@@ -20,17 +31,17 @@
     <tr>
         <td>3.</td>
         <td>GET</td>
-        <td>https://yjbqcl7od0.execute-api.ca-central-1.amazonaws.com/dev/data</td>
+        <td>https://yjbqcl7od0.execute-api.ca-central-1.amazonaws.com/dev/data/{id}</td>
     </tr>
     <tr>
         <td>4.</td>
         <td>PUT</td>
-        <td>https://yjbqcl7od0.execute-api.ca-central-1.amazonaws.com/dev/data</td>
+        <td>https://yjbqcl7od0.execute-api.ca-central-1.amazonaws.com/dev/data/{id}</td>
     </tr>
     <tr>
         <td>5.</td>
         <td>DELETE</td>
-        <td>https://yjbqcl7od0.execute-api.ca-central-1.amazonaws.com/dev/data</td>
+        <td>https://yjbqcl7od0.execute-api.ca-central-1.amazonaws.com/dev/data/{id}</td>
     </tr>
 </table>
 <br>
@@ -74,6 +85,13 @@
 <br>
 <hr>
 <br>
+
+<div id="deployment"></div>
+
+## Deployment:
+<h1>Deployments</h1>
+
+
 
 
 
