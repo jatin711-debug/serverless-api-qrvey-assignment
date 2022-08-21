@@ -91,7 +91,7 @@
 ## Deployment:
 <div>
     1. Install NodeJs enviornment: <a href="https://nodejs.org/en/download/">Click Here To Download</a>
-    2. Install Aws CLI: (Make Sure) <a href="https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html">Click Here To Download</a>
+    2. Install Aws CLI: (Make Sure to have a aws account) <a href="https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html">Click Here To Download</a>
     3. Clone This Repository( Make sure git is install and congigured ):
     ```
     > git clone https://github.com/jatin711-debug/serverless-api-qrvey-assignment.git
