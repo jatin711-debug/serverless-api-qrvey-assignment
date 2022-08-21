@@ -90,24 +90,18 @@
 
 ## Deployment:
 <div>
-    1. Install NodeJs enviornment: <a href="https://nodejs.org/en/download/">Click Here To Download</a>
-    2. Install Aws CLI: (Make Sure to have a aws account) <a href="https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html">Click Here To Download</a>
-    3. Clone This Repository( Make sure git is install and congigured ):
-    ```
-    > git clone https://github.com/jatin711-debug/serverless-api-qrvey-assignment.git
-    ```
-    4. Install Dependencies:
-    ```
-    > npm install && npm install -g serverless
-    ```
-    5. Config Aws Credentials:
-    ```
-    > aws config
-    ```
-    6. Deploy Application to Aws Cloud:
-    ```
-    > serverless deploy
-    ```
+    <h3>Requirements:</h3>
+    <ul>
+        <li><a href="https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html">AWS CLI</a> along with aws account and its credentials configured</li>
+        <li><a href="https://nodejs.org/en/" >NodeJs</a></li>
+        <li><a href="https://git-scm.com/" >Git</a></li>
+    </ul>
+    <h3>Process:</h3>
+    <ol>
+        <li>Clone this repository,run > git clone https://github.com/jatin711-debug/serverless-api-qrvey-assignment.git</li>
+        <li>npm install && npm install -g serverless</li>
+        <li>serverless deploy</li>
+    </ol>
 </div>
 
 
