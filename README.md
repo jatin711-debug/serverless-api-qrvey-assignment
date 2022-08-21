@@ -1,5 +1,8 @@
 # Serverless CRUD REST API
 <br>
+
+<h2>Documentation Link: <a href="https://jatin711-debug.github.io/serverless-api-qrvey-assignment/#deployment">Click Here</a> </h2>
+
 <hr>
 <br>
 <ul>
@@ -102,6 +105,7 @@
         <li>npm install && npm install -g serverless</li>
         <li>serverless deploy</li>
     </ol>
+    <img src="./documents/media/images/deploy.png">
 </div>
 
 
