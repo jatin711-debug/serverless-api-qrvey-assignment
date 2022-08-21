@@ -2,9 +2,9 @@
 
 <table>
     <tr>
-        <th>No.<th>
+        <th>No</th>
         <th>Method Type</th>
-        <th>_Link_</th>
+        <th>Link</th>
     </tr>
     <tr>
         <td>1.</td>
