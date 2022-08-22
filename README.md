@@ -17,7 +17,7 @@
 ## Usage:
 <table>
     <tr>
-        <th>No</th>
+        <th>No.</th>
         <th>Method Type</th>
         <th>EndPoints</th>
     </tr>
