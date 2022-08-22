@@ -29,7 +29,7 @@
     <tr>
         <td>2.</td>
         <td>GET</td>
-        <td>https://yjbqcl7od0.execute-api.ca-central-1.amazonaws.com/dev/data</td>
+        <td>https://0bor6rhgm1.execute-api.ca-central-1.amazonaws.com/dev/data</td>
     </tr>
     <tr>
         <td>3.</td>
