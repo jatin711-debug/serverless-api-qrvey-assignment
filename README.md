@@ -1,7 +1,7 @@
 # Serverless CRUD REST API
 <br>
 
-<h2>Documentation Link: <a href="https://jatin711-debug.github.io/serverless-api-qrvey-assignment/#deployment">Click Here</a> </h2>
+<h2>Documentation Link: <a href="https://jatin711-debug.github.io/serverless-api-qrvey-assignment">Click Here</a> </h2>
 
 <hr>
 <br>

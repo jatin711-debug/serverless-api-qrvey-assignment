@@ -21,6 +21,12 @@ provider:
           Resource:
             - "arn:aws:dynamodb:${self:provider.region}:*:table/${self:provider.environment.POSTS_TABLE}"
 functions:
+  getXlsxFile:
+    handler: src/handlers/getFile.sendXLSX
+    events:
+    - http:
+        path: /data/xlsx
+        method: get
   createData:
     handler: src/handlers/create.createData
     events:
